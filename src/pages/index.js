@@ -1,18 +1,21 @@
 import React, { useState } from "react"
 import Homepage from "../components/homepage"
 import ModeToggle from "../components/modeToggle"
+import { myContext } from "../../provider"
 
 const Home = () => {
-  const [togglestate, settogglestate] = useState("dark")
-
-  const togglemode = () => {
-    settogglestate(togglestate === "dark" ? "light" : "dark")
-  }
   return (
-    <div className={`main-wrapper-${togglestate}`}>
-      <ModeToggle toggleMode={togglemode} togglestate={togglestate} />
-      <Homepage togglestate={togglestate} />
-    </div>
+    <myContext.Consumer>
+      {context => (
+        <div className={`main-wrapper-${context.toggleState}`}>
+          <ModeToggle
+            toggleMode={context.changeToggleMode}
+            togglestate={context.toggleState}
+          />
+          <Homepage togglestate={context.toggleState} />
+        </div>
+      )}
+    </myContext.Consumer>
   )
 }
 export default Home

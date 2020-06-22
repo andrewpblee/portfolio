@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import arrow from "../../static/images/back.png"
+import arrow from "../../static/images/left-arrow.png"
 export default function BackArrow() {
   return (
     <div>
