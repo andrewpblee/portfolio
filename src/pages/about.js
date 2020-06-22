@@ -13,7 +13,7 @@ export default function About() {
             toggleMode={context.changeToggleMode}
             togglestate={context.toggleState}
           />
-          <BackArrow />
+          <BackArrow togglestate={context.toggleState} />
           <div class="pageTitle">
             <h1>
               About<span>.</span>

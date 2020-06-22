@@ -1,12 +1,19 @@
-import React, { Component } from "react"
+import React from "react"
 import { Link } from "gatsby"
-import arrow from "../../static/images/left-arrow.png"
-export default function BackArrow() {
+import arrowlight from "../../static/images/left-arrow-light.png"
+import arrowdark from "../../static/images/left-arrow-dark.png"
+
+const BackArrow = props => {
   return (
     <div>
       <Link to="/">
-        <img className="backarrow" src={arrow}></img>
+        <img
+          className="backarrow arrow"
+          src={`${props.togglestate === "dark" ? arrowlight : arrowdark}`}
+        ></img>
       </Link>
     </div>
   )
 }
+
+export default BackArrow
