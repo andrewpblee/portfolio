@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Web Cartoon ETL",
+    "languages": ["python", "airflow"],
+    "bio": "A Daily ETL to scrape a web cartoon and load into a SQL DB"
+  },
+  {
+    "name": "Pokemon Invaders",
+    "languages": ["python"],
+    "bio": "A Space Invaders clone, with Pokemon!"
+  },
+  {
+    "name": "Cat Fail Generator",
+    "languages": ["js", "react"],
+    "bio": "A Random gif generator of failing cats"
+  },
+  {
+    "name": "Binary Clock",
+    "languages": ["js"],
+    "bio": "Telling the time using binary"
+  }
+]
