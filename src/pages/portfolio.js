@@ -21,7 +21,7 @@ const Portfolio = () => {
             </h1>
           </div>
           <ProjectList />
-          <AboutArrow togglestate={context.toggleState} />
+          {/* <AboutArrow togglestate={context.toggleState} /> */}
         </div>
       )}
     </myContext.Consumer>

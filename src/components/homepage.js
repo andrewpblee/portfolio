@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Contact from "../components/contact"
 
 const Homepage = props => {
   return (
@@ -20,6 +21,7 @@ const Homepage = props => {
       >
         <button className={`button-${props.togglestate}`}>Take a look</button>
       </Link>
+      <Contact />
     </div>
   )
 }
