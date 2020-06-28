@@ -2,7 +2,6 @@ import React from "react"
 import ModeToggle from "../components/modeToggle"
 import { myContext } from "../../provider"
 import BackArrow from "../components/backArrow"
-import AboutArrow from "../components/aboutArrow"
 import ProjectList from "../components/projectlist"
 
 const Portfolio = () => {
@@ -21,7 +20,6 @@ const Portfolio = () => {
             </h1>
           </div>
           <ProjectList />
-          {/* <AboutArrow togglestate={context.toggleState} /> */}
         </div>
       )}
     </myContext.Consumer>
