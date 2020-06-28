@@ -8,6 +8,7 @@ const ProjectList = () => {
       projectName={proj.name}
       language={proj.languages.join(", ")}
       bio={proj.bio}
+      src={proj.src}
     />
   ))
   return <div className="projectList">{projectsArr}</div>

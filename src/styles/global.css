@@ -129,6 +129,22 @@ button {
   font-style: normal;
 }
 
+.bio {
+  font-size: 1em;
+  width: 80%;
+  margin: 10px 0;
+}
+.languages {
+  font-style: italic;
+  margin: 5px 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Desktop view  */
 @media only screen and (min-width: 400px) {
   .pageTitle {
@@ -172,6 +188,14 @@ button {
   }
   .projectList {
     padding: 0 0 5vh 0;
+  }
+  .project {
+    margin: 0 0 6vh 0;
+  }
+  .projectName {
+    font-size: 1.6em;
+    margin: 0;
+    color: inherit;
   }
 }
 
@@ -237,6 +261,7 @@ button {
   .projectName {
     font-size: 1.6em;
     margin: 0;
+    text-decoration: inherit;
   }
 
   .languages {

@@ -2,21 +2,25 @@
   {
     "name": "Web Cartoon ETL",
     "languages": ["python", "airflow"],
-    "bio": "A Daily ETL to scrape a web cartoon and load into a SQL DB"
+    "bio": "A daily ETL to scrape a web cartoon and load into a SQL DB",
+    "src": "https://github.com/andrewpblee/web-cartoon-etl"
   },
   {
     "name": "Pokemon Invaders",
     "languages": ["python"],
-    "bio": "A Space Invaders clone, with Pokemon!"
+    "bio": "A \"Space Invaders\" clone, with Pokemon!",
+    "src": "https://github.com/andrewpblee/pokemon-invasion"
   },
   {
     "name": "Cat Fail Generator",
     "languages": ["js", "react"],
-    "bio": "A Random gif generator of failing cats"
+    "bio": "A random gif generator of failing cats",
+    "src": "https://github.com/andrewpblee/catfails"
   },
   {
     "name": "Binary Clock",
     "languages": ["js"],
-    "bio": "Telling the time using binary"
+    "bio": "Telling the time using binary",
+    "src": "https://codepen.io/andrewpblee/pen/EJgmQP"
   }
 ]
