@@ -13,13 +13,15 @@ const Portfolio = () => {
             toggleMode={context.changeToggleMode}
             togglestate={context.toggleState}
           />
-          <BackArrow togglestate={context.toggleState} />
-          <div class={`pageTitle-${context.toggleState} pageTitle`}>
-            <h1>
-              Portfolio<span>.</span>
-            </h1>
+          <div className="hp-wrapper">
+            <BackArrow togglestate={context.toggleState} />
+            <div className={`pageTitle-${context.toggleState} pageTitle`}>
+              <h1>
+                Portfolio<span>.</span>
+              </h1>
+            </div>
+            <ProjectList />
           </div>
-          <ProjectList />
         </div>
       )}
     </myContext.Consumer>

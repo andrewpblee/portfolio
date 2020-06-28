@@ -18,6 +18,17 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.dark {
+  background-color: #f8f7ff;
+  color: #2b2d42;
+}
+
+.light {
+  background-color: #2b2d42;
+  color: #f8f7ff;
+}
+
 .main-wrapper-light {
   font-family: "Rubik-Bold", serif;
   color: #f8f7ff;
@@ -56,64 +67,32 @@ h1 {
   font-style: normal;
   padding: 0;
   margin: 0;
-  margin: 17vh 0 0 6vw;
 }
 
+.hi-im-andrew h2,
 .hi-im-andrew h1 {
-  font-size: 7.5em;
-  margin: 0;
-}
-
-.hi-im-andrew h2 {
-  font-size: 2.5em;
   margin: 0;
 }
 
 .text {
-  width: 80vw;
-  font-family: "Rubik-Light", serif;
-  font-size: 1.25em;
   letter-spacing: 0px;
   line-height: 1.5em;
   font-style: normal;
   text-align: left;
-  margin: 2% 0 0 6vw;
-}
-
-#aboutText {
-  font-size: 1em;
-  margin: -3vh 0 0 6vw;
-  line-height: 2em;
-}
-
-.about {
-  width: 99px;
-  height: 53px;
-  margin: 0 0 0 65vw;
-  overflow: hidden;
-  font-family: "Rubik-Bold", serif;
-  color: #f8f7ff;
-  font-size: 13px;
-  letter-spacing: 0px;
-  line-height: 1.4;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
 }
 
 button {
   display: block;
   font-family: "Rubik-Light", serif;
-  font-size: 20px;
   text-align: center;
-  width: 40vw;
   height: 5vh;
   margin: 8vh auto 0 auto;
+  border-radius: 1em;
 }
 
 .button-light {
   color: #f8f7ff;
-  background-color: #2b2d42;
+  background: #2b2d42;
   border: 2px solid#f8f7ff;
 }
 
@@ -123,80 +102,11 @@ button {
   border: 2px solid #2b2d42;
 }
 
-.arrow {
-  width: 30px;
-  height: 30px;
-}
-
-.backarrow {
-  margin: 6% 0 0 6vw;
-}
-
-.pageTitle {
-  overflow: visible;
-  font-size: 1.8em;
-  letter-spacing: 0px;
-  line-height: 1.2;
-  font-weight: 700;
-  font-style: normal;
-  margin: 5vh 0 0 6vw;
-}
-
-.pageTitle-light {
-  color: #f8f7ff;
-}
-.pageTitle-dark {
-  color: #2b2d42;
-}
-
-.modeToggle {
-  width: 30px;
-  height: 30px;
-  margin: 2vh 0 0 85vw;
-}
-
-.dark {
-  background-color: #f8f7ff;
-  color: #2b2d42;
-}
-
-.light {
-  background-color: #2b2d42;
-  color: #f8f7ff;
-}
-
-.projectName {
-  font-size: 1.6em;
-  margin: 0;
-}
-
-.languages {
-  font-style: italic;
-  margin: 5px 0;
-  padding: 0;
-  font-size: 0.9em;
-}
-
-.bio {
-  font-size: 1em;
-  width: 80%;
-  margin: 10px 0;
-}
-
-.projectList {
-  margin-left: 6vw;
-}
-
-.project {
-  margin: 0 0 4vh 0;
-}
-
 .contact {
   position: fixed;
   bottom: 0;
   display: inline-block;
-  margin: 10px auto;
-  width: 100%;
+  margin: 0 auto 10px 0;
   text-align: center;
 }
 
@@ -204,4 +114,153 @@ button {
   display: inline;
   padding: 10px 2%;
   font-family: "Rubik-Light", serif;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.pageTitle {
+  overflow: visible;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Desktop view  */
+@media only screen and (min-width: 400px) {
+  .pageTitle {
+    font-size: 48px;
+    margin: 0;
+  }
+  .hp-wrapper {
+    width: 48vw;
+    margin: 0 auto;
+  }
+  .modeToggle {
+    width: 30px;
+    height: 30px;
+    margin: 2vh 0 0 68vw;
+  }
+
+  .hi-im-andrew h1 {
+    font-size: 150px;
+    margin-top: 13vh;
+  }
+
+  .hi-im-andrew h2 {
+    font-size: 60px;
+  }
+  .text {
+    font-family: "Rubik-Light", serif;
+    font-size: 30px;
+  }
+
+  button {
+    font-size: 20px;
+    width: 15vw;
+  }
+
+  .contact {
+    width: 48vw;
+  }
+
+  .backarrow {
+    margin: 0;
+  }
+  .projectList {
+    padding: 0 0 5vh 0;
+  }
+}
+
+/* Mobile sizing */
+@media only screen and (max-width: 400px) {
+  .pageTitle {
+    font-size: 1.8em;
+    margin: 5vh 0 0 6vw;
+  }
+  .hi-im-andrew {
+    margin: 17vh 0 0 6vw;
+  }
+
+  .hi-im-andrew h1 {
+    font-size: 7.5em;
+    margin: 0;
+  }
+
+  .hi-im-andrew h2 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  .text {
+    width: 80vw;
+    font-family: "Rubik-Light", serif;
+    font-size: 1.25em;
+    margin: 2% 0 0 6vw;
+  }
+
+  button {
+    font-size: 20px;
+    width: 40vw;
+  }
+
+  .backarrow {
+    margin: 6% 0 0 6vw;
+  }
+
+  .pageTitle {
+    overflow: visible;
+    font-size: 1.8em;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    margin: 5vh 0 0 6vw;
+  }
+
+  .pageTitle-light {
+    color: #f8f7ff;
+  }
+  .pageTitle-dark {
+    color: #2b2d42;
+  }
+
+  .modeToggle {
+    width: 30px;
+    height: 30px;
+    margin: 2vh 0 0 85vw;
+  }
+
+  .projectName {
+    font-size: 1.6em;
+    margin: 0;
+  }
+
+  .languages {
+    font-style: italic;
+    margin: 5px 0;
+    padding: 0;
+    font-size: 0.9em;
+  }
+
+  .bio {
+    font-size: 1em;
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .projectList {
+    margin: 0 0 5vh 6vw;
+  }
+
+  .project {
+    margin: 0 0 4vh 0;
+  }
+
+  .contact {
+    width: 100vw;
+  }
 }

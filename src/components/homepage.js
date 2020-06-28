@@ -4,7 +4,7 @@ import Contact from "../components/contact"
 
 const Homepage = props => {
   return (
-    <div>
+    <div className="hp-wrapper">
       <div className={`hi-im-andrew ${props.togglestate}`}>
         <h1>
           Hi<span>,</span>
