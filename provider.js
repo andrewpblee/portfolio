@@ -4,7 +4,7 @@ import React, { useState } from "react"
 
 
 export const myContext = React.createContext({
-  toggleState: '',
+  toggleState: 'light',
   setToggleState: () => {}
 })
 
