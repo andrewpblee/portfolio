@@ -93,20 +93,20 @@ button {
 .button-light {
   color: #f8f7ff;
   background: #2b2d42;
-  border: 2px solid#f8f7ff;
+  border: 0.125rem solid#f8f7ff;
 }
 
 .button-dark {
   color: #2b2d42;
   background-color: #f8f7ff;
-  border: 2px solid #2b2d42;
+  border: 0.125rem solid #2b2d42;
 }
 
 .contact {
   position: fixed;
   bottom: 0;
   display: inline-block;
-  margin: 0 auto 10px 0;
+  margin: 0 auto 0.625rem 0;
   text-align: center;
 }
 
@@ -117,8 +117,8 @@ button {
 }
 
 .arrow {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .pageTitle {
@@ -148,7 +148,7 @@ a {
 /* Desktop view  */
 @media only screen and (min-width: 400px) {
   .pageTitle {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 0;
   }
   .hp-wrapper {
@@ -162,20 +162,20 @@ a {
   }
 
   .hi-im-andrew h1 {
-    font-size: 150px;
+    font-size: 9.375rem;
     margin-top: 13vh;
   }
 
   .hi-im-andrew h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
   .text {
     font-family: "Rubik-Light", serif;
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   button {
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 15vw;
   }
 
@@ -227,7 +227,7 @@ a {
   }
 
   button {
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 40vw;
   }
 
