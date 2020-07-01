@@ -9,6 +9,7 @@ const ModeToggle = props => {
       className={classNames}
       src={props.togglestate === "dark" ? darkmode : lightmode}
       onClick={props.toggleMode}
+      alt= {props.togglestate}
     ></img>
   )
 }

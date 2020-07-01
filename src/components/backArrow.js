@@ -10,6 +10,7 @@ const BackArrow = props => {
         <img
           className="backarrow arrow"
           src={`${props.togglestate === "dark" ? arrowlight : arrowdark}`}
+          alt='back arrow'
         ></img>
       </Link>
     </div>

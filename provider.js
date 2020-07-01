@@ -1,6 +1,12 @@
 import React, { useState } from "react"
 
-export const myContext = React.createContext()
+
+
+
+export const myContext = React.createContext({
+  toggleState: '',
+  setToggleState: () => {}
+})
 
 const Provider = props => {
   const [toggleState, setToggleState] = useState("dark")

@@ -12,7 +12,7 @@ const Contact = () => {
       </p>
       <p className="contactLink">|</p>
       <p className="contactLink">
-        <a href="mailto:enquires@andrewpblee.io?subject=Hi!">Email</a>
+        <a href="mailto:hey@andrewpblee.io?subject=Hi!">Email</a>
       </p>
     </div>
   )
