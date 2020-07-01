@@ -2,7 +2,7 @@ import React from "react"
 import ModeToggle from "../components/modeToggle"
 import { myContext } from "../../provider"
 import BackArrow from "../components/backArrow"
-import ProjectList from "../components/projectlist"
+import ProjectList from "../components/projectList"
 
 const Portfolio = () => {
   return (
