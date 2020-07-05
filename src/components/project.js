@@ -1,13 +1,14 @@
 import React from "react"
+import { Link } from 'gatsby'
 
-const Project = props => {
+const Project = p => {
   return (
     <div className="project">
       <h2 className="projectName">
-        <a href={props.src} target="_blank">{props.projectName}</a>
+        <Link to ={p.proj.slug}>{p.proj.title}</Link>
       </h2>
-      <p className="bio">{props.bio}</p>
-      <p className="languages">{props.language}</p>
+      <p className="bio">{p.proj.bio}</p>
+      <p className="languages">{p.proj.languages}</p>
     </div>
   )
 }

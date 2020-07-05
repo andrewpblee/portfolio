@@ -58,6 +58,7 @@ p {
 
 h1 {
   text-decoration: none;
+  font-family: "Rubik-Bold", serif;
 }
 
 .hi-im-andrew {
@@ -145,14 +146,34 @@ a {
   color: inherit;
 }
 
+.blog {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+
+
+
 /* Desktop view  */
 @media only screen and (min-width: 400px) {
-  .pageTitle {
+
+  .blog {
+    width: 42vw;
+  }
+
+  h1 {
     font-size: 3rem;
+  }
+
+  #portfolio {
+    font-size: 5em;
+  }
+  .pageTitle {
     margin: 0;
   }
   .hp-wrapper {
-    width: 48vw;
+    width: 42vw;
     margin: 0 auto;
   }
   .modeToggle {
@@ -180,7 +201,7 @@ a {
   }
 
   .contact {
-    width: 48vw;
+    width: 42vw;
   }
 
   .backarrow {
@@ -201,9 +222,20 @@ a {
 
 /* Mobile sizing */
 @media only screen and (max-width: 500px) {
+
+  .blog {
+    width: 88vw;
+  }
   .pageTitle {
-    font-size: 1.8em;
     margin: 5vh 0 0 6vw;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  #portfolio {
+    font-size: 2em;
   }
   .hi-im-andrew {
     margin: 17vh 0 0 6vw;
@@ -294,5 +326,4 @@ a {
     width: 100%;
     margin: 0 auto;
   }
-
 }

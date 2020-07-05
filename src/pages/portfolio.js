@@ -1,10 +1,24 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import ModeToggle from "../components/modeToggle"
 import { myContext } from "../../provider"
 import BackArrow from "../components/backArrow"
-import ProjectList from "../components/projectList"
+import Project from "../components/project"
 
-const Portfolio = () => {
+
+const Portfolio = ({
+  data: {
+    allMarkdownRemark: {
+      edges
+    },
+  }
+}) => {
+  const projectsArr = edges.map(edge => (
+    <Project
+      key={edge.node.id}
+      proj= {edge.node.frontmatter}
+    />
+  ))
   return (
     <myContext.Consumer>
       {context => (
@@ -14,17 +28,35 @@ const Portfolio = () => {
             togglestate={context.toggleState}
           />
           <div className="hp-wrapper">
-            <BackArrow togglestate={context.toggleState} />
+            <BackArrow togglestate={context.toggleState} backward='/'/>
             <div className={`pageTitle-${context.toggleState} pageTitle`}>
-              <h1>
+              <h1 id='portfolio'>
                 Portfolio<span>.</span>
               </h1>
             </div>
-            <ProjectList />
+            <div className="projectList">{projectsArr}</div>
           </div>
         </div>
       )}
     </myContext.Consumer>
   )
 }
-export default React.memo(Portfolio)
+export default Portfolio
+
+export const pageQuery = graphql`
+query {
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        frontmatter {
+          bio
+          languages
+          slug
+          title
+        }
+      }
+    }
+  }
+}
+`
