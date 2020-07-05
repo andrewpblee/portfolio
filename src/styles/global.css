@@ -152,6 +152,7 @@ a {
   word-wrap: break-word;
   margin: 0 auto;
   line-height: 2em;
+  padding-bottom: 50px;
 }
 
 /* Desktop view  */

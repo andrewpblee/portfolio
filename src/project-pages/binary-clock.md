@@ -6,3 +6,16 @@ bio: "Telling the time using binary"
 ---
 
 #Binary Clock<span>.</span>
+
+The Binary Clock is a really interesting way to tell the time. From bottom to top of each column, the buttons represent 1,2,4 and 8, and the time is the sum of all "on" buttons.
+
+<iframe height="450px" style="width: 100%;" scrolling="no" title="Binary Clock" src="https://codepen.io/andrewpblee/embed/preview/EJgmQP?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/andrewpblee/pen/EJgmQP'>Binary Clock</a> by andrewpblee
+  (<a href='https://codepen.io/andrewpblee'>@andrewpblee</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+This was a quick, fun project to test my understanding of a few ES2015 features, such as arrow functions, template literals and the spread operator.
+
+There's a lot of repetition in the code, at the moment I'm flattening the time, and using the index to control the dots of each column, dictated by the class name:
+
+I could clean the code by creating a function to calculate the background colour, then loop through the columns and dots.
