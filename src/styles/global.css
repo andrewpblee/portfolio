@@ -54,6 +54,7 @@ span {
 }
 p {
   font-family: "Rubik-Light", serif;
+  font-size: 20px;
 }
 
 h1 {
@@ -150,14 +151,11 @@ a {
   overflow-wrap: break-word;
   word-wrap: break-word;
   margin: 0 auto;
+  line-height: 2em;
 }
-
-
-
 
 /* Desktop view  */
 @media only screen and (min-width: 400px) {
-
   .blog {
     width: 42vw;
   }
@@ -222,7 +220,6 @@ a {
 
 /* Mobile sizing */
 @media only screen and (max-width: 500px) {
-
   .blog {
     width: 88vw;
   }
@@ -239,7 +236,6 @@ a {
   }
   .hi-im-andrew {
     margin: 17vh 0 0 6vw;
-    
   }
 
   .hi-im-andrew h1 {
