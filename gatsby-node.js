@@ -6,7 +6,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     query MyQuery {
         allMarkdownRemark {
           edges {
-            id
             node {
               frontmatter {
                 languages

@@ -28,9 +28,9 @@ const Portfolio = ({
             togglestate={context.toggleState}
           />
           <div className="hp-wrapper">
-            <BackArrow togglestate={context.toggleState} />
+            <BackArrow togglestate={context.toggleState} backward='/'/>
             <div className={`pageTitle-${context.toggleState} pageTitle`}>
-              <h1>
+              <h1 id='portfolio'>
                 Portfolio<span>.</span>
               </h1>
             </div>
@@ -41,7 +41,7 @@ const Portfolio = ({
     </myContext.Consumer>
   )
 }
-export default React.memo(Portfolio)
+export default Portfolio
 
 export const pageQuery = graphql`
 query {

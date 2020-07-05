@@ -6,7 +6,7 @@ import arrowdark from "../../static/images/left-arrow-dark.png"
 const BackArrow = props => {
   return (
     <div>
-      <Link to="/">
+      <Link to={props.backward} >
         <img
           className="backarrow arrow"
           src={`${props.togglestate === "dark" ? arrowlight : arrowdark}`}

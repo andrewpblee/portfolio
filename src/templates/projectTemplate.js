@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import ModeToggle from "../components/modeToggle"
+import { myContext } from "../../provider"
+import BackArrow from "../components/backArrow"
 
 const Template = ({
     data,
@@ -8,12 +10,20 @@ const Template = ({
     const { markdownRemark } = data
     const { frontmatter, html } = markdownRemark
     return (
-        <React.Fragment>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.languages}</h2>
-        <p>{frontmatter.bio}</p>
-        <div dangerouslySetInnerHTML={{__html: html}} /> 
-        </React.Fragment>
+        <myContext.Consumer>
+        {context => (
+        <div className={`main-wrapper-${context.toggleState}`}>
+                      <ModeToggle
+            toggleMode={context.changeToggleMode}
+            togglestate={context.toggleState}
+          />
+          <div className="hp-wrapper">
+            <BackArrow togglestate={context.toggleState} backward='/portfolio' />
+            <div className='blog' dangerouslySetInnerHTML={{__html: html}} /> 
+        </div>
+        </div>
+      )}
+    </myContext.Consumer>
     )
 }
 
@@ -21,6 +31,7 @@ export default Template
 export const pageQuery = graphql`
     query($slug: String!) {
         markdownRemark(frontmatter: { slug: {eq: $slug }}) {
+            id
             html
             frontmatter {
                 title
