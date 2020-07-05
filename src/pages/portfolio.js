@@ -1,10 +1,24 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import ModeToggle from "../components/modeToggle"
 import { myContext } from "../../provider"
 import BackArrow from "../components/backArrow"
-import ProjectList from "../components/projectList"
+import Project from "../components/project"
 
-const Portfolio = () => {
+
+const Portfolio = ({
+  data: {
+    allMarkdownRemark: {
+      edges
+    },
+  }
+}) => {
+  const projectsArr = edges.map(edge => (
+    <Project
+      key={edge.node.id}
+      proj= {edge.node.frontmatter}
+    />
+  ))
   return (
     <myContext.Consumer>
       {context => (
@@ -20,7 +34,7 @@ const Portfolio = () => {
                 Portfolio<span>.</span>
               </h1>
             </div>
-            <ProjectList />
+            <div className="projectList">{projectsArr}</div>
           </div>
         </div>
       )}
@@ -28,3 +42,21 @@ const Portfolio = () => {
   )
 }
 export default React.memo(Portfolio)
+
+export const pageQuery = graphql`
+query {
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        frontmatter {
+          bio
+          languages
+          slug
+          title
+        }
+      }
+    }
+  }
+}
+`
