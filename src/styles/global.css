@@ -33,20 +33,20 @@ body {
   font-family: "Rubik-Bold", serif;
   color: #f8f7ff;
   background-color: #2b2d42;
-  min-height: 100vh;
+  min-height: 95vh;
   width: 100vw;
   margin: 0;
-  padding: 0;
+  padding: 0 0 5vh 0;
 }
 
 .main-wrapper-dark {
   font-family: "Rubik-Bold", serif;
   background-color: #f8f7ff;
   color: #2b2d42;
-  min-height: 100vh;
+  min-height: 95vh;
   width: 100vw;
   margin: 0;
-  padding: 0;
+  padding: 0 0 5vh 0;
 }
 
 span {
@@ -152,9 +152,13 @@ a {
   word-wrap: break-word;
   margin: 0 auto;
   line-height: 2em;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
+svg {
+  width: 35px;
+  margin: 0 20px 0 -10px;
+}
 /* Desktop view  */
 @media only screen and (min-width: 400px) {
   .blog {
@@ -183,7 +187,7 @@ a {
 
   .hi-im-andrew h1 {
     font-size: 9.375rem;
-    margin-top: 13vh;
+    margin-top: 11vh;
   }
 
   .hi-im-andrew h2 {
@@ -221,6 +225,12 @@ a {
 
 /* Mobile sizing */
 @media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .blog {
     width: 88vw;
   }
@@ -321,6 +331,18 @@ a {
 
   .hp-wrapper {
     width: 100%;
+    margin: 0 auto;
+  }
+  .gh-button {
+    margin: 0 auto 20px auto;
+    width: 55vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .gh-button-text {
+    display: inline;
     margin: 0 auto;
   }
 }

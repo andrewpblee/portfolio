@@ -16,6 +16,6 @@ The Binary Clock is a really interesting way to tell the time. From bottom to to
 
 This was a quick, fun project to test my understanding of a few ES2015 features, such as arrow functions, template literals and the spread operator.
 
-There's a lot of repetition in the code, at the moment I'm flattening the time, and using the index to control the dots of each column, dictated by the class name:
+There's a lot of repetition in the code. I get the current time, then map over each digit, within which I map over each column and light the dot if the digit is in a certain list, depending on which binary value the dot represents.
 
-I could clean the code by creating a function to calculate the background colour, then loop through the columns and dots.
+For a start, I could clean the code by creating a function to calculate the background colour, then loop through the columns and dots.
