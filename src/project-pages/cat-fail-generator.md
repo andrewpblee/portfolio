@@ -4,6 +4,7 @@ title: "Cat Fail Generator"
 languages: "js, react"
 bio: "A random gif generator of failing cats"
 repo: "https://github.com/andrewpblee/catfails"
+date: "2019-07-14"
 ---
 
 #Cat Fail Generator<span>.</span>

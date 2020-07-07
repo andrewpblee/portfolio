@@ -4,6 +4,7 @@ title: "Pokemon Invasion"
 languages: python
 bio: 'A "Space Invaders" clone, with Pokemon!'
 repo: "https://github.com/andrewpblee/pokemon-invasion"
+date: "2020-05-12"
 ---
 
 #Pokemon Invasion<span>.</span>

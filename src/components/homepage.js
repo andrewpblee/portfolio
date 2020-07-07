@@ -1,13 +1,24 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Contact from "../components/contact"
 
 const Homepage = props => {
+  const [word, changeWord] = useState("Hi")
+  const words = [".", "!", "?"]
+  useEffect(() => {
+    const interval = setInterval(() => {
+      changeWord(word =>
+        word === "," ? words[Math.floor(Math.random() * words.length)] : ","
+      )
+    }, 5000)
+    return () => clearInterval(interval)
+  })
   return (
     <div className="hp-wrapper">
       <div className={`hi-im-andrew ${props.togglestate}`}>
         <h1>
-          Hi<span>,</span>
+          Hi
+          <span>{word}</span>
         </h1>
         <h2>I'm Andrew</h2>
       </div>
