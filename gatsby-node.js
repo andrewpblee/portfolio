@@ -12,6 +12,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               slug
               title
               bio
+              repo
             }
           }
         }
@@ -28,6 +29,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         languages: node.frontmatter.languages,
         title: node.frontmatter.title,
         bio: node.frontmatter.bio,
+        repo: node.frontmatter.repo,
       },
     })
   })

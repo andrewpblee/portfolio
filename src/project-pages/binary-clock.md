@@ -3,6 +3,7 @@ slug: "/projects/binary-clock"
 title: "Binary Clock"
 languages: "js"
 bio: "Telling the time using binary"
+repo: "https://github.com/andrewpblee/binary-clock/blob/master/index.html"
 ---
 
 #Binary Clock<span>.</span>

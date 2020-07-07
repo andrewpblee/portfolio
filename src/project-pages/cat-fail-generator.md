@@ -3,6 +3,7 @@ slug: "/projects/cat-fail-generator"
 title: "Cat Fail Generator"
 languages: "js, react"
 bio: "A random gif generator of failing cats"
+repo: "https://github.com/andrewpblee/catfails"
 ---
 
 #Cat Fail Generator<span>.</span>

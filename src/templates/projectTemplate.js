@@ -22,7 +22,7 @@ const Template = ({ data }) => {
             />
             <div className="blog" dangerouslySetInnerHTML={{ __html: html }} />
             <Link
-              to="/portfolio/"
+              to={frontmatter.repo}
               style={{ textDecoration: "none", color: "#2b2d42" }}
             >
               <button className={`button-${context.toggleState} gh-button`}>
@@ -57,6 +57,7 @@ export const pageQuery = graphql`
         title
         languages
         bio
+        repo
       }
     }
   }
