@@ -221,6 +221,18 @@ svg {
     margin: 0;
     color: inherit;
   }
+  .gh-button {
+    margin: 0 auto 20px auto;
+    width: 15vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .gh-button-text {
+    display: inline;
+    margin: 0 auto;
+  }
 }
 
 /* Mobile sizing */
