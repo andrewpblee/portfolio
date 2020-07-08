@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Contact from "../components/contact"
 
 const Homepage = props => {
-  const [word, changeWord] = useState("Hi")
+  const [word, changeWord] = useState(",")
   const words = [".", "!", "?"]
   useEffect(() => {
     const interval = setInterval(() => {
