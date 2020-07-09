@@ -43,7 +43,7 @@ const Template = ({ data }) => {
                       : hover && context.toggleState === "dark"
                       ? "#2b2d42"
                       : !hover && context.toggleState === "light"
-                      ? "#0d0e14"
+                      ? "#595e7a"
                       : "#f8f7ff"
                   }
                   fill-rule="evenodd"
