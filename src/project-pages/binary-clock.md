@@ -4,6 +4,7 @@ title: "Binary Clock"
 languages: "js"
 bio: "Telling the time using binary"
 repo: "https://github.com/andrewpblee/binary-clock/blob/master/index.html"
+date: '2019-04-07'
 ---
 
 #Binary Clock<span>.</span>

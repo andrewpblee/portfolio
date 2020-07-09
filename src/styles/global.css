@@ -233,6 +233,15 @@ svg {
     display: inline;
     margin: 0 auto;
   }
+
+  .blog p {
+    font-size: 1.1em;
+  }
+
+  .blog code {
+    color: #348aa7;
+    font-size: 1.1em;
+  }
 }
 
 /* Mobile sizing */
@@ -356,5 +365,14 @@ svg {
   .gh-button-text {
     display: inline;
     margin: 0 auto;
+  }
+
+  .blog p {
+    font-size: 0.9em;
+  }
+
+  .blog code {
+    color: #348aa7;
+    font-size: 1.1em;
   }
 }

@@ -4,6 +4,7 @@ title: "Web Cartoon ETL"
 languages: python, airflow
 bio: "A daily ETL to scrape a web cartoon and load into a SQL DB"
 repo: "https://github.com/andrewpblee/web-cartoon-etl"
+date: "2020-06-12"
 ---
 
 #Web Cartoon ETL<span>.</span>
