@@ -1,7 +1,7 @@
 ---
 slug: "/projects/web-cartoon-etl"
 title: "Web Cartoon ETL"
-languages: python, airflow
+languages: "python, sql, airflow"
 bio: "A daily ETL to scrape a web cartoon and load into a SQL DB"
 repo: "https://github.com/andrewpblee/web-cartoon-etl"
 date: "2020-06-12"

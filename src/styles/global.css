@@ -166,6 +166,11 @@ a {
     width: 42vw;
   }
 
+  .blog img {
+    width: 100px;
+    height: 100px;
+  }
+
   h1 {
     font-size: 3rem;
   }
