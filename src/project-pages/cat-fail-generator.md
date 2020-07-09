@@ -13,7 +13,7 @@ The Cat Fail Generator is a react app that calls the Giphy API and fetches a gif
 
 This project is very clean and simple, demonstrating an asynchronous call to an api using `async await`.
 
-![Screenshot of the Cat fail Generator](./catfails.png)
+![Screenshot of the Cat fail Generator](./cat-fails.png)
 
 The react app is quite simple, but required setting the state within an asynchronous function and calling this function on `componentDidMount()` and on the button click. Also, as the gif is fetched from the api, I had to add a loading icon onto the screen to show the user that the button click was successful and the gif is on the way.
 
