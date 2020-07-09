@@ -166,6 +166,10 @@ a {
     width: 42vw;
   }
 
+  .blog img {
+    border-radius: 5px;
+  }
+
   h1 {
     font-size: 3rem;
   }

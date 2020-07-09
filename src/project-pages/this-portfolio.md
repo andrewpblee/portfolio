@@ -15,7 +15,7 @@ I choose to use Gatsby as my framework as I could continue to advance my underst
 
 I tried to approach this as an end-to-end project, I first spent a couple weeks using Framer to construct a prototype and fully understand the UX and design on both desktop and mobile. This meant that I could understand the scope of the project and build the mvp within a short period of time.
 
-One of the main challenges I had was how to carry the state light/dark mode toggle across pages. Passing the state to a child component can be acheived quite easily using `props`, but moving to a sibling page proved challenging as there was on obvious parent component to handle the state management.
+One of the main challenges I had was how to carry the state light/dark mode toggle across pages. Passing the state to a child component can be acheived quite easily using `props`, but moving to a sibling page proved challenging as there was no obvious parent component to handle the state management.
 
 After some stack overflowing I came across the idea of creating a `provider` file to use as a wrapper element which could handle state management, which is then imported into `gatsby-browser.js` to make the component accessible to all pages.
 
