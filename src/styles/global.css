@@ -29,6 +29,12 @@ body {
   color: #f8f7ff;
 }
 
+.github-icon {
+  margin: 0 auto;
+  display: block;
+  width: 35px;
+}
+
 .main-wrapper-light {
   font-family: "Rubik-Bold", serif;
   color: #f8f7ff;
@@ -154,11 +160,6 @@ a {
   line-height: 2em;
   padding-bottom: 20px;
 }
-
-svg {
-  width: 35px;
-  margin: 0 20px 0 -10px;
-}
 /* Desktop view  */
 @media only screen and (min-width: 400px) {
   .blog {
@@ -220,18 +221,6 @@ svg {
     font-size: 1.6em;
     margin: 0;
     color: inherit;
-  }
-  .gh-button {
-    margin: 0 auto 20px auto;
-    width: 15vw;
-    height: 50px;
-    display: flex;
-    align-items: center;
-  }
-
-  .gh-button-text {
-    display: inline;
-    margin: 0 auto;
   }
 
   .blog p {
@@ -352,18 +341,6 @@ svg {
 
   .hp-wrapper {
     width: 100%;
-    margin: 0 auto;
-  }
-  .gh-button {
-    margin: 0 auto 20px auto;
-    width: 55vw;
-    height: 50px;
-    display: flex;
-    align-items: center;
-  }
-
-  .gh-button-text {
-    display: inline;
     margin: 0 auto;
   }
 
