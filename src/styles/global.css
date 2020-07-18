@@ -65,6 +65,7 @@ p {
 
 h1 {
   text-decoration: none;
+  line-height: 1.1em;
   font-family: "Rubik-Bold", serif;
 }
 
@@ -254,6 +255,7 @@ a {
 
   h1 {
     font-size: 2em;
+    background-color: sandybrown;
   }
 
   #portfolio {
@@ -333,6 +335,7 @@ a {
 
   .projectList {
     margin: 0 0 5vh 6vw;
+    width: 90vw;
   }
 
   .project {
