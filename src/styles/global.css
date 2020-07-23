@@ -7,6 +7,10 @@
   src: url("../../static/fonts/Rubik-Bold.ttf");
 }
 
+p > a {
+  color: #348aa7;
+}
+
 html {
   margin: 0;
   padding: 0;
