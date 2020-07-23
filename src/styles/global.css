@@ -29,10 +29,32 @@ body {
   color: #f8f7ff;
 }
 
-.github-icon {
+.iconfooter {
+  text-align: center;
+}
+
+.github-icon-dark {
   margin: 0 auto;
-  display: block;
-  width: 35px;
+  padding: 0 2vw;
+  display: inline-block;
+  width: 30px;
+  fill: #94949c;
+}
+
+.github-icon-dark:hover {
+  fill: #2b2d42;
+}
+
+.github-icon-light {
+  margin: 0 auto;
+  padding: 0 2vw;
+  display: inline-block;
+  width: 30px;
+  fill: #595e7a;
+}
+
+.github-icon-light:hover {
+  fill: #f8f7ff;
 }
 
 .main-wrapper-light {
@@ -95,7 +117,7 @@ button {
   font-family: "Rubik-Light", serif;
   text-align: center;
   height: 5vh;
-  margin: 8vh auto 0 auto;
+  margin: 8vh auto 6vh auto;
   border-radius: 1em;
 }
 
@@ -255,14 +277,13 @@ a {
 
   h1 {
     font-size: 2em;
-    background-color: sandybrown;
   }
 
   #portfolio {
     font-size: 2em;
   }
   .hi-im-andrew {
-    margin: 17vh 0 0 6vw;
+    margin: 14vh 0 0 6vw;
   }
 
   .hi-im-andrew h1 {
@@ -315,7 +336,7 @@ a {
   }
 
   .projectName {
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin: 0;
     text-decoration: inherit;
   }
@@ -347,7 +368,7 @@ a {
   }
 
   .hp-wrapper {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
   }
 
