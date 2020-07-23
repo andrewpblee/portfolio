@@ -370,6 +370,7 @@ a {
   .hp-wrapper {
     width: 95%;
     margin: 0 auto;
+    padding-bottom: 3vh;
   }
 
   .blog p {
