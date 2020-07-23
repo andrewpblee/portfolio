@@ -22,5 +22,6 @@ module.exports = {
         path: `${__dirname}/src/project-pages`,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }

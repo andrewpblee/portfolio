@@ -1,7 +1,7 @@
 ---
 slug: "/projects/cocktails-part-one"
 title: "Cocktails Project (Part One)"
-languages: "js, react"
+languages: "js, puppeteer"
 bio: "A web scraping project to gather cocktail information from wikipedia"
 repo: "https://github.com/andrewpblee/cocktails"
 date: "2020-07-17"

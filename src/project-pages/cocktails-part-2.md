@@ -20,3 +20,5 @@ One the details page itself, the cocktail details are filtered from the original
 ![Screenshot of the Cocktail Details Page](./cocktailsfrontendpage.png)
 
 I wanted to keep the design simple, and used css grid to control the layout, which made designing the responsiveness much easier.
+
+If you'd like to take a look, The Cocktails Compendium can be found [here](https://cocktailscompendium.netlify.app).

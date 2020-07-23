@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import ModeToggle from "../components/modeToggle"
 import { myContext } from "../../provider"
+import { Helmet } from "react-helmet"
 import BackArrow from "../components/backArrow"
 import Project from "../components/project"
 
@@ -17,6 +18,11 @@ const Portfolio = ({
     <myContext.Consumer>
       {context => (
         <div className={`main-wrapper-${context.toggleState}`}>
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title>Andrew Lee | Projects</title>
+            <link rel="canonical" href="https://andrewpblee.netlify.app" />
+          </Helmet>
           <ModeToggle
             toggleMode={context.changeToggleMode}
             togglestate={context.toggleState}
