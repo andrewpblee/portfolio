@@ -39,7 +39,7 @@ body {
 
 .github-icon-dark {
   margin: 0 auto;
-  padding: 0 2vw;
+  padding: 0 3vw;
   display: inline-block;
   width: 30px;
   fill: #94949c;
@@ -51,7 +51,7 @@ body {
 
 .github-icon-light {
   margin: 0 auto;
-  padding: 0 2vw;
+  padding: 0 3vw;
   display: inline-block;
   width: 30px;
   fill: #595e7a;
@@ -121,7 +121,7 @@ button {
   font-family: "Rubik-Light", serif;
   text-align: center;
   height: 5vh;
-  margin: 8vh auto 4vh auto;
+  margin: 8vh auto 0 auto;
   border-radius: 1em;
 }
 
@@ -209,6 +209,7 @@ a {
   }
   .hp-wrapper {
     width: 42vw;
+    min-height: 70vh;
     margin: 0 auto;
   }
   .modeToggle {
@@ -373,8 +374,8 @@ a {
 
   .hp-wrapper {
     width: 95%;
+    min-height: 70vh;
     margin: 0 auto;
-    padding-bottom: 3vh;
   }
 
   .blog p {
