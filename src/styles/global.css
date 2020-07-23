@@ -31,6 +31,7 @@ body {
 
 .iconfooter {
   text-align: center;
+  margin: 0;
 }
 
 .github-icon-dark {
@@ -61,20 +62,20 @@ body {
   font-family: "Rubik-Bold", serif;
   color: #f8f7ff;
   background-color: #2b2d42;
-  min-height: 95vh;
+  min-height: 100vh;
   width: 100vw;
   margin: 0;
-  padding: 0 0 5vh 0;
+  padding: 0;
 }
 
 .main-wrapper-dark {
   font-family: "Rubik-Bold", serif;
   background-color: #f8f7ff;
   color: #2b2d42;
-  min-height: 95vh;
+  min-height: 100vh;
   width: 100vw;
   margin: 0;
-  padding: 0 0 5vh 0;
+  padding: 0;
 }
 
 span {
@@ -117,7 +118,7 @@ button {
   font-family: "Rubik-Light", serif;
   text-align: center;
   height: 5vh;
-  margin: 8vh auto 6vh auto;
+  margin: 8vh auto 4vh auto;
   border-radius: 1em;
 }
 
