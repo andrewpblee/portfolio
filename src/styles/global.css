@@ -267,7 +267,7 @@ a {
 }
 
 /* Mobile sizing */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   body {
     width: 100%;
     min-height: 100%;
@@ -289,7 +289,7 @@ a {
     font-size: 2em;
   }
   .hi-im-andrew {
-    margin: 14vh 0 0 6vw;
+    margin: 13vh 0 0 6vw;
   }
 
   .hi-im-andrew h1 {
@@ -375,7 +375,7 @@ a {
 
   .hp-wrapper {
     width: 95%;
-    padding-bottom: 3vh;
+    padding-bottom: 2vh;
     min-height: 65vh;
     margin: 0 auto;
   }
