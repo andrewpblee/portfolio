@@ -126,14 +126,17 @@ button {
 }
 
 .button-light {
-  color: #f8f7ff;
-  background: #2b2d42;
-  border: 0.125rem solid#f8f7ff;
+  font-size: 0.9rem;
+  color: #2b2d42;
+  background: #f8f7ff;
+  border: 0.125rem solid #f8f7ff;
+  /* #2b2d42 */
 }
 
 .button-dark {
-  color: #2b2d42;
-  background-color: #f8f7ff;
+  font-size: 0.9rem;
+  color: #f8f7ff;
+  background-color: #2b2d42;
   border: 0.125rem solid #2b2d42;
 }
 
@@ -188,7 +191,7 @@ a {
   padding-bottom: 20px;
 }
 /* Desktop view  */
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   .blog {
     width: 42vw;
   }
