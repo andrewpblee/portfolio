@@ -1,15 +1,18 @@
 import React, { useState } from "react"
 
-
-
+const mode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  ? "light"
+  : "dark"
 
 export const myContext = React.createContext({
-  toggleState: 'light',
-  setToggleState: () => {}
+  toggleState: mode,
+  setToggleState: () => {},
 })
 
 const Provider = props => {
-  const [toggleState, setToggleState] = useState("dark")
+  const [toggleState, setToggleState] = useState(mode)
+  console.log({ originalMode: mode })
+  console.log({ toggleState: toggleState })
   return (
     <myContext.Provider
       value={{
@@ -22,5 +25,4 @@ const Provider = props => {
     </myContext.Provider>
   )
 }
-
 export default ({ element }) => <Provider>{element}</Provider>
