@@ -12,19 +12,17 @@ const Template = ({ data }) => {
   return (
     <myContext.Consumer>
       {context => (
-        <div className={`main-wrapper-${context.toggleState}`}>
+        <div className={`mw blog-wrapper`}>
           <ModeToggle
             toggleMode={context.changeToggleMode}
             togglestate={context.toggleState}
           />
-          <div className="hp-wrapper">
-            <BackArrow
-              togglestate={context.toggleState}
-              backward="/portfolio"
-            />
-            <div className="blog" dangerouslySetInnerHTML={{ __html: html }} />
-            <Icon repo={frontmatter.repo} />
-          </div>
+          <BackArrow togglestate={context.toggleState} backward="/portfolio" />
+          <div
+            className={`blog ${context.toggleState}`}
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+          {/* <Icon repo={frontmatter.repo} /> */}
         </div>
       )}
     </myContext.Consumer>

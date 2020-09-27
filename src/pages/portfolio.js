@@ -17,7 +17,7 @@ const Portfolio = ({
   return (
     <myContext.Consumer>
       {context => (
-        <div className={`main-wrapper-${context.toggleState}`}>
+        <div className={`mw ${context.toggleState}`}>
           <Helmet>
             <meta charSet="utf-8" />
             <title>Andrew Lee | Projects</title>
@@ -27,15 +27,11 @@ const Portfolio = ({
             toggleMode={context.changeToggleMode}
             togglestate={context.toggleState}
           />
-          <div className="hp-wrapper">
-            <BackArrow togglestate={context.toggleState} backward="/" />
-            <div className={`pageTitle-${context.toggleState} pageTitle`}>
-              <h1 id="portfolio">
-                Portfolio<span>.</span>
-              </h1>
-            </div>
-            <div className="projectList">{projectsArr}</div>
-          </div>
+          <BackArrow togglestate={context.toggleState} backward="/" />
+          <h1 id="portfolio">
+            Portfolio<span>.</span>
+          </h1>
+          <div className="projectList">{projectsArr}</div>
         </div>
       )}
     </myContext.Consumer>
