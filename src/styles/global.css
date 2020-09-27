@@ -282,7 +282,7 @@ html.dark h2:hover {
     margin: 0 auto;
   }
 }
-
+/* Mobile  */
 @media only screen and (max-width: 599px) {
   .homepage-hp-wrapper {
     margin: 0 0 0 3%;
@@ -295,7 +295,7 @@ html.dark h2:hover {
     font-weight: 700;
     padding: 0;
     width: 100%;
-    margin: 0 0 -20px 0;
+    margin: 0 0 -30px 0;
     padding: 0;
     animation: onLoadHeader 0.4s linear;
   }
@@ -316,7 +316,8 @@ html.dark h2:hover {
     font-weight: 700;
     font-size: 30px;
     color: rgba(0, 0, 0, 0.38);
-    display: inline;
+    display: inline-block;
+    margin: 10px 0 0 0;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -350,10 +351,10 @@ html.dark h2:hover {
     transform-origin: center;
     transform: rotate(0deg);
     border-radius: 10px 2px 10px 10px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
@@ -426,7 +427,7 @@ html.dark h2:hover {
   }
 
   .blog h1 {
-    font-size: 25px;
+    font-size: 28px;
     opacity: 0.8;
     width: 90vw;
     margin: 25vw auto 0px auto;
@@ -441,7 +442,7 @@ html.dark h2:hover {
   .blog p {
     width: 80vw;
     margin: 20px auto;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0px;
     line-height: 1.8;
     font-weight: 400;
