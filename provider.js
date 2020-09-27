@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
-const mode = window.matchMedia("(prefers-color-scheme: dark)").matches
-  ? "light"
+const mode = window.matchMedia("(prefers-color-scheme: light)").matches
+  ? ""
   : "dark"
 
 export const myContext = React.createContext({
@@ -11,14 +11,16 @@ export const myContext = React.createContext({
 
 const Provider = props => {
   const [toggleState, setToggleState] = useState(mode)
-  console.log({ originalMode: mode })
-  console.log({ toggleState: toggleState })
+
   return (
     <myContext.Provider
       value={{
         toggleState,
-        changeToggleMode: () =>
-          setToggleState(toggleState === "dark" ? "light" : "dark"),
+        changeToggleMode: () => {
+          setToggleState(toggleState === "dark" ? "" : "dark")
+          console.log(toggleState)
+          document.querySelector("html").classList.toggle("dark")
+        },
       }}
     >
       {props.children}

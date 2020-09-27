@@ -1,18 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
-import Icon from "../components/IconFooterHP"
 
 const Homepage = props => {
   return (
     <>
-      <div className="hp-wrapper">
-        <div className={`hi-im-andrew ${props.togglestate}`}>
-          <h1>
-            Hi<span>,</span>
-          </h1>
-          <h2>I'm Andrew</h2>
-        </div>
-        <p className={`text ${props.togglestate}`}>
+      <div className={`homepage-hp-wrapper ${props.togglestate}`}>
+        <h1>
+          Hi<span>,</span> I'm Andrew.
+        </h1>
+        <h2></h2>
+        <p>
           I'm an analyst looking to move into engineering. Here are some
           projects I've been working on.
         </p>
@@ -20,10 +17,16 @@ const Homepage = props => {
           to="/portfolio/"
           style={{ textDecoration: "none", color: "#2b2d42" }}
         >
-          <button className={`button-${props.togglestate}`}>Take a look</button>
+          <h2>portfolio.</h2>
+        </Link>
+        <Link
+          to="/portfolio/"
+          style={{ textDecoration: "none", color: "#2b2d42" }}
+        >
+          <br></br>
+          <h2>about.</h2>
         </Link>
       </div>
-      <Icon repo={"https://github.com/andrewpblee"} />
     </>
   )
 }

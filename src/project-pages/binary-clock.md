@@ -4,14 +4,14 @@ title: "Binary Clock"
 languages: "js"
 bio: "Telling the time using binary"
 repo: "https://github.com/andrewpblee/binary-clock/blob/master/index.html"
-date: '2019-04-07'
+date: "2019-04-07"
 ---
 
 #Binary Clock<span>.</span>
 
 The Binary Clock is a really interesting way to tell the time. From bottom to top of each column, the buttons represent 1,2,4 and 8, and the time is the sum of all "on" buttons.
 
-<iframe height="450px" style="width: 100%;" scrolling="no" title="Binary Clock" src="https://codepen.io/andrewpblee/embed/preview/EJgmQP?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="450px" style="width: 50%;" scrolling="no" title="Binary Clock" src="https://codepen.io/andrewpblee/embed/preview/EJgmQP?height=265&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/andrewpblee/pen/EJgmQP'>Binary Clock</a> by andrewpblee
   (<a href='https://codepen.io/andrewpblee'>@andrewpblee</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
