@@ -309,7 +309,6 @@ html.dark h2:hover {
     padding: 0;
     width: 90%;
     animation: onLoadPara 0.6s linear;
-    /* animation: onLoadPara 0.7s ease-out; */
   }
 
   .homepage-hp-wrapper h2 {
