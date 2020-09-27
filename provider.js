@@ -1,10 +1,6 @@
 import React, { useState } from "react"
 
-const mode =
-  typeof window !== "undefined" &&
-  window.matchMedia("(prefers-color-scheme: light)").matches
-    ? ""
-    : "dark"
+const mode = ""
 
 export const myContext = React.createContext({
   toggleState: mode,
