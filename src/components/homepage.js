@@ -19,13 +19,13 @@ const Homepage = props => {
         >
           <h2>portfolio.</h2>
         </Link>
-        <Link
+        {/* <Link
           to="/portfolio/"
           style={{ textDecoration: "none", color: "#2b2d42" }}
         >
           <br></br>
           <h2>about.</h2>
-        </Link>
+        </Link> */}
       </div>
     </>
   )
