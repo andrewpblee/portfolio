@@ -6,7 +6,7 @@ const BackArrow = props => {
     <div>
       <Link to={props.backward}>
         <svg
-          id="Layer"
+          id="Arrow"
           enable-background="new 0 0 64 64"
           height="512"
           viewBox="0 0 64 64"

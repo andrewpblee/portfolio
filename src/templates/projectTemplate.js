@@ -12,7 +12,7 @@ const Template = ({ data }) => {
   return (
     <myContext.Consumer>
       {context => (
-        <div className={`mw blog-wrapper`}>
+        <div className={`mw`}>
           <ModeToggle
             toggleMode={context.changeToggleMode}
             togglestate={context.toggleState}
@@ -22,7 +22,7 @@ const Template = ({ data }) => {
             className={`blog ${context.toggleState}`}
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          {/* <Icon repo={frontmatter.repo} /> */}
+          <Icon repo={frontmatter.repo} />
         </div>
       )}
     </myContext.Consumer>

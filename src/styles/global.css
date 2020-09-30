@@ -91,6 +91,45 @@ html.dark h2:hover {
   text-shadow: 2px 8px rgba(69, 25, 24, 0.5);
 }
 
+html.dark code {
+  color: #b0413e;
+}
+
+html code {
+  color: #0336ff;
+}
+
+.iconfooter {
+  width: 40px;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.github-icon-dark {
+  fill: #ffffff;
+  opacity: 0.3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.github-icon- {
+  fill: #000000;
+  opacity: 0.3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.github-icon-:hover {
+  opacity: 0.9;
+}
+.github-icon-dark:hover {
+  opacity: 0.9;
+}
+
 /* Desktop  */
 @media only screen and (min-width: 600px) {
   /* General elements */
@@ -264,7 +303,7 @@ html.dark h2:hover {
     animation: onLoadHeader 0.4s ease-out;
   }
 
-  svg {
+  #Arrow {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -370,7 +409,7 @@ html.dark h2:hover {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
   }
 
-  svg {
+  #Arrow {
     width: 50px;
     height: 50px;
     position: absolute;
