@@ -29,7 +29,7 @@ const Portfolio = ({
           />
           <BackArrow togglestate={context.toggleState} backward="/" />
           <h1 id="portfolio">
-            Portfolio<span>.</span>
+            portfolio<span>.</span>
           </h1>
           <div className="projectList">{projectsArr}</div>
         </div>
