@@ -10,7 +10,7 @@ const Homepage = props => {
         </h1>
         <h2></h2>
         <p>
-          I'm an analyst looking to move into engineering. Here are some
+          I work with data. Here are some
           projects I've been working on.
         </p>
         <Link
@@ -19,13 +19,6 @@ const Homepage = props => {
         >
           <h2>portfolio.</h2>
         </Link>
-        {/* <Link
-          to="/portfolio/"
-          style={{ textDecoration: "none", color: "#2b2d42" }}
-        >
-          <br></br>
-          <h2>about.</h2>
-        </Link> */}
       </div>
     </>
   )
